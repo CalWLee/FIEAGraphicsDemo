@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{f58fb629-91ed-48ff-8acc-c88f77dfd4c1}</ItemsProjectGuid>
+    <ItemsRootNamespace>Game</ItemsRootNamespace>
+    <ItemsProjectName>Game.Shared</ItemsProjectName>
+    <SharedGUID>4f9cd534-b6c4-4d30-8831-9dce5181a10d</SharedGUID>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterBrightnessPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterInversePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BasicPS.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BasicVS.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BlinnPhongPixelShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderModel>5.0</ShaderModel>
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BlinnPhongVertexShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderModel>5.0</ShaderModel>
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ColoredTrianglePS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ColoredTriangleVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\DepthMapVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\EnvironmentMappingPixelShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\EnvironmentMappingVertexShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\FogPixelShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\FogVertexShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointDemoPS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointDemoVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointLightPixelShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointLightVertexShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SamplePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SampleVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ShadowMappingPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ShadowMappingVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkinnedModelPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkinnedModelVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkyboxPixelShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkyboxVertexShader.hlsl">
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\TransparencyPixelShader.hlsl">
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Pixel</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\TransparencyVertexShader.hlsl">
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterGrayscalePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <FileType>Document</FileType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterSepiaPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <FileType>Document</FileType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainDomainShader.hlsl">
+      <ShaderType>Domain</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainHullShader.hlsl">
+      <ShaderType>Hull</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <DeploymentContent>true</DeploymentContent>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureMappingPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureMappingVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TVFilterPixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ObjectFileOutput>$(OutDir)Content\Shaders\%(Filename).cso</ObjectFileOutput>
+      <DeploymentContent>true</DeploymentContent>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DemoSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\AnimationDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\BlinnPhongDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\ColorFilteringDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\EnvironmentMappingDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\FogDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\PointLightDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\Sample3DSceneRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\ShadowMappingDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\TexturedModelDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\TransparencyDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProjectDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderingGame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TerrainDemo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DemoSystem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\AnimationDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\BlinnPhongDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\ColorFilteringDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\EnvironmentMappingDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\FogDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\PointLightDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\Sample3DSceneRenderer.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\ShadowMappingDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\TexturedModelDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\TransparencyDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProjectDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderingGame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TerrainDemo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\Arial_14_Regular.spritefont">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\DirectionalLightProxy.obj.bin">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\NoTPoseRunning.dae.bin">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\PointLightProxy.obj.bin">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\RunningSoldier.bin">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\Sphere.bin">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\teapot.obj.bin">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\AlphaMask_32bpp.png" />
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Checkerboard.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\colorm01.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Earthatday.dds">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\EarthComposite.dds">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Heightmap.jpg">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Maskonaive2_1024.dds">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Noise.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\ScanDistort.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Scanlines.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Soldier.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+</Project>

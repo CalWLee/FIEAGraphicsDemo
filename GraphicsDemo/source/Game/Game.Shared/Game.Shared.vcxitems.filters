@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{d8ea069b-c242-405e-965b-c636801fe9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{0eef541e-d755-4374-bd3d-109d071c0510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Models">
+      <UniqueIdentifier>{923c7abc-eeb0-4c66-ad06-8530b982aceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures">
+      <UniqueIdentifier>{b954dd21-6c8e-43d2-af38-acd63d449f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{c6fd2668-1966-442a-904e-27bece55ab42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Fonts">
+      <UniqueIdentifier>{a89863d3-41f9-4a2a-a38d-75bf7d97ffe5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ColoredTriangleVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ColoredTrianglePS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointDemoPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointDemoVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SamplePixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SampleVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureMappingPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureMappingVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BlinnPhongVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BlinnPhongPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BasicVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\BasicPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointLightVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\PointLightPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkyboxVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkyboxPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\EnvironmentMappingPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\EnvironmentMappingVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\FogVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\FogPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\TransparencyPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\TransparencyVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterInversePixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterSepiaPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterGrayscalePixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorFilterBrightnessPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ShadowMappingPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\ShadowMappingVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\DepthMapVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkinnedModelVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\Shaders\SkinnedModelPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TVFilterPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainHullShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainDomainShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TerrainPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderingGame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\Sample3DSceneRenderer.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\TexturedModelDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\BlinnPhongDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\PointLightDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\EnvironmentMappingDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\FogDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\TransparencyDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\ColorFilteringDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DemoSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\ShadowMappingDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Demos\AnimationDemo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProjectDemo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TerrainDemo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderingGame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\Sample3DSceneRenderer.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\TexturedModelDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\BlinnPhongDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\PointLightDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\EnvironmentMappingDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\FogDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\TransparencyDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\ColorFilteringDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DemoSystem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\ShadowMappingDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Demos\AnimationDemo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProjectDemo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TerrainDemo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\DirectionalLightProxy.obj.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\PointLightProxy.obj.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\Sphere.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\teapot.obj.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\Arial_14_Regular.spritefont">
+      <Filter>Content\Fonts</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\RunningSoldier.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\NoTPoseRunning.dae.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\EarthComposite.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Earthatday.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Maskonaive2_1024.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Checkerboard.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\AlphaMask_32bpp.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Soldier.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Scanlines.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Noise.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\ScanDistort.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Heightmap.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\colorm01.bmp">
+      <Filter>Content\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+#pragma once
+
+#include "Camera.h"
+
+namespace Library
+{
+    class Keyboard;
+    class Mouse;
+
+    class FirstPersonCamera : public Camera
+    {
+        RTTI_DECLARATIONS(FirstPersonCamera, Camera)
+
+    public:
+        FirstPersonCamera(Game::GameBase& game);
+		FirstPersonCamera(Game::GameBase& game, float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);
+        virtual ~FirstPersonCamera() = default;
+
+		FirstPersonCamera(const FirstPersonCamera& rhs) = delete;
+		FirstPersonCamera& operator=(const FirstPersonCamera& rhs) = delete;
+
+        float& Sensitivity();
+        float& RotationRate();
+        float& MovementRate();		
+        
+        virtual void Initialize() override;
+        virtual void Update(const GameTime& gameTime) override;
+
+        static const float DefaultSensitivity;
+        static const float DefaultRotationRate;
+		static const float DefaultMovementRate;
+
+    protected:
+		bool mMoveInZSpace;
+
+        float mSensitivity;
+        float mRotationRate;
+        float mMovementRate;     
+    };
+}
+
